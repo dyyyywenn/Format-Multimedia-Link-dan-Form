@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Formulir</title>
+    </head>
+<body>
+    <h1 align="center">Latihan Formulir</h1>
+    <form action="formulir.html" method="POST">
+    <fieldset>
+    <legend align="center">Input Data</legend>
+        <table>
+        <tr>
+            <td>Nama: </td>
+            <td><input type="text" id="name" placeholder="Masukkan Nama "></td>
+        </tr>
+        <tr>
+            <td>Password: </td>
+            <td><input type="password" id="password" ></td>
+        </tr>
+        <tr>
+            <td>Tanggal Lahir: </td>
+            <td><input type="date" id="date" ></td>
+        </tr>
+        <tr>
+            <td>Nomor Telepon: </td>
+            <td><input type="number" id="number" placeholder="Masukkan Nomor Telepon "></td>
+        </tr>
+        <tr>
+            <td>Kota: </td>
+            <td><select>
+                <datalist id="Kota">
+                <option value="Ambon"></option>
+                <option value="Balikpapan">Balikpapan</option>
+                <option value="Cirebon">Cirebon</option>
+                <option value="Denpasar">Denpasar</option>
+                <option value="Gorontalo">Gorontalo</option>
+                <option value="Jambi">Jambi</option>
+                <option value="Kediri">Kediri</option>
+                <option value="Purwokerto" selected="selected">Purwokerto</option>
+                </datalist>
+           
+                </select></td>
+        </tr>
+        <tr>
+            <td>Alamat: </td>
+            <td><textarea cols="25" rows="5">Silahkan katakan isi Alamat</textarea></td>
+        </tr>
+        <tr>
+            <td>Hobi: </td>
+            <td><input type="checkbox" name="hobi" value="Menulis" checked="checkbox">Menulis 
+                <input type="checkbox" name="hobi" value="musik" >Bermain alat musik
+                <input type="checkbox" name="hobi" value="masak" >Memasak 
+                <input type="checkbox" name="hobi" value="foto" >Fotografi 
+                <input type="checkbox" name="hobi" value="lain" disabled="disabled">lain</td>
+        </tr>
+        <tr>
+            <td>Makanan Favorit: </td>
+            <td><input type="text" list="makanan">
+                <datalist id="makanan">
+                    <option value="ayam goreng">Ayam Goreng</option>
+                    <option value="Burger">Burger</option>
+                    <option value="Batagor">Batagor</option>
+                    <option value="Cireng">Cireng</option>                   
+                </datalist></td>
+        </tr>
+        
+        </table>
+        <p align="right">
+            <input type="submit" value="kirim">
+            <input type="reset" value="reset">
+            </p>
+    </fieldset>
+    <p align="center">
+        <button type="reset" a href="#next">Next page</button>
+    </p>
+</body>
+</html>
